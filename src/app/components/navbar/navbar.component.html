@@ -1,0 +1,129 @@
+<!-- <p>navbar works!</p> -->
+<div class="top-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7 col-lg-7">
+        <div class="address-bar">
+          <ul class="list-inline">
+            <li>
+              <a href="mailto:support@creativetech-solutions.com">
+                <i class="fa fa-envelope"></i>
+                support@creativetech-solutions.com
+              </a>
+            </li>
+            <li>
+              <a href="callto:0512300537">
+                <i class="fa fa-phone"></i>
+                +92512300537
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-5 col-md-5">
+        <div class="social-icons">
+          <ul class="list-inline">
+            <li>
+              <a href="#" rel="noopener noreferrer" target="_blank">
+                <i class="fa fa-skype"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" rel="noopener noreferrer" target="_blank">
+                <i class="fa fa-dribbble"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" rel="noopener noreferrer" target="_blank">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<nav class="navbar navbar-expand-md navbar-light" id="navbar">
+  <div class="container">
+    <a class="navbar-brand logo" href="#">
+      <img src="../assets/img/only logo (1).svg" alt="" width="60%" />
+    </a>
+
+    <a class="navbar-brand logo-2" href="#">
+      <img
+        src="../assets/img/logo2.svg"
+        class="img-fluid"
+        alt=""
+        width="52%"
+        [ngStyle]="{ position: 'relative', bottom: '30px' }"
+      />
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLinkActive="active" (click)="toHome()"
+            >Home</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLinkActive="active" (click)="toService()"
+            >Services</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLinkActive="active" (click)="toWork()"
+            >Works</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLinkActive="active" (click)="toTeam()"
+            >Team</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLinkActive="active"
+            (click)="toTestimonial()"
+            >Testimonials</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLinkActive="active" (click)="toFaq()"
+            >Faq</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLinkActive="active" (click)="toContact()"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<app-banners></app-banners>
+<app-services></app-services>
+<app-work></app-work>
+<app-team></app-team>
+<app-testimonial></app-testimonial>
+<app-faq></app-faq>
+<app-partner></app-partner>
+<app-contact></app-contact>
+<app-scroll-to-top></app-scroll-to-top>
+<app-footer></app-footer>

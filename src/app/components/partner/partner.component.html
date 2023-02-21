@@ -1,0 +1,32 @@
+<section class="our-partners ptb-100">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2 text-center">
+        <div class="section-title">
+          <h2>Our Partners</h2>
+          <p>
+            Partnerships increase your lease of knowledge, expertise, and
+            resources available to make better products and reach a greater
+            audience. All of these put together along with 360-degree feedback
+            can skyrocket your business to great heights. The right business
+            partnership will enhance the ethos of your firm.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="slick-wrapper">
+    <ngx-slick-carousel
+      class="carousel"
+      #slickModal="slick-carousel"
+      [config]="slideConfig"
+    >
+      <div ngxSlickItem *ngFor="let partner of partners" class="slide">
+        <a href="{{ partner?.link }}" class="logo-preview" target="_blank">
+          <img [src]="partner?.image" alt="" />
+        </a>
+      </div>
+    </ngx-slick-carousel>
+  </div>
+</section>

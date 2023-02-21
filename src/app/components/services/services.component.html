@@ -1,0 +1,60 @@
+<section id="services" class="services ptb-100">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2 text-center">
+        <div class="section-title">
+          <h2>Services</h2>
+          <p>
+            our services include but not limited to React , Angular , Nodejs ,
+            Laravel , Codeigniter , Wordpress and Joomla
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row" *ngIf="!showMore">
+      <div
+        class="col-md-6 col-lg-4 text-center"
+        *ngFor="let serviceData of serviceData"
+      >
+        <div class="service-item">
+          <div class="glyph">
+            <img [src]="serviceData?.image" alt="" width="100" height="100" />
+          </div>
+          <h3>{{ serviceData?.title }}</h3>
+          <p>{{ serviceData?.description }}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" *ngIf="showMore">
+      <div
+        class="col-md-6 col-lg-4 text-center"
+        *ngFor="let defaultService of defaultService"
+      >
+        <div class="service-item">
+          <div class="glyph">
+            <img
+              [src]="defaultService?.image"
+              alt=""
+              width="100"
+              height="100"
+            />
+          </div>
+          <h3>{{ defaultService?.title }}</h3>
+          <p>{{ defaultService?.description }}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="btn-a" *ngIf="isShow">
+      <button (click)="showLessHandler()">show less</button>
+    </div>
+
+    <div class="btn-a" *ngIf="!isShow">
+      <button (click)="showMoreHandler()">show more</button>
+    </div>
+  </div>
+</section>

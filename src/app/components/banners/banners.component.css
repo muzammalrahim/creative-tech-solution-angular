@@ -1,0 +1,219 @@
+.hompage-slides-wrapper {
+  position: relative;
+}
+.single-slider-item {
+  background-size: cover;
+  background-position: center center;
+  background-color: #dddddd;
+  height: 700px;
+  font-size: 15px;
+  color: #fff;
+}
+.single-slider-item .center-wrap {
+  margin-top: 40px;
+}
+.single-slider-item h1 {
+  font-size: 51px;
+  margin: 0 0 25px;
+}
+.hero-text {
+  font-size: 18px;
+  margin: 0 0 15px;
+  font-weight: 500;
+  display: inline-block;
+}
+.home-banner-area {
+  background-image: url(../../../assets/img/slide-bg-1.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-color: #dddddd;
+  height: 700px;
+  font-size: 15px;
+  color: #fff;
+}
+.diplay-table {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.display-table-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+.banner-text h1 {
+  font-size: 51px;
+  margin: 0 0 30px;
+}
+.banner-text .center-wrap {
+  margin-top: 40px;
+}
+/* VIDEO-AREA */
+.home-video-area {
+  height: 700px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.home-video-area::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  left: 0;
+  top: 0;
+}
+.home-video-area h1 {
+  font-size: 51px;
+  margin: 0 0 30px;
+}
+.home-video-area .center-wrap {
+  margin-top: 40px;
+}
+.home-video-area video {
+  min-width: 100%;
+  min-height: 100%;
+}
+.video-text-area {
+  position: absolute;
+  top: 50%;
+  color: #fff;
+  max-width: 1170px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  transform: translatey(-50%);
+  -webkit-transform: translatey(-50%);
+  -ms-transform: translatey(-50%);
+}
+/* END VIDEO-AREA */
+
+/* Styling Thumbs */
+.owl-thumb {
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  display: table;
+  width: 100%;
+  text-align: center;
+  z-index: 9;
+}
+.owl-thumb-item {
+  display: inline-block;
+  border: none;
+  max-width: 360px;
+  margin: 0 15px;
+  cursor: pointer;
+  background-color: #fdfdfd;
+  box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0);
+  padding: 18px;
+  border-radius: 10px;
+  position: relative;
+  color: #848484;
+  transform: translateX(0%) rotateZ(-11deg) scale(0.95);
+  -webkit-transform: translateX(0%) rotateZ(-11deg) scale(0.95);
+  -ms-transform: translateX(0%) rotateZ(-11deg) scale(0.95);
+  transition: transform 0.4s ease-out;
+}
+.owl-thumb-item i {
+  font-size: 60px;
+  transition: 0.4s;
+  color: #fe5619;
+}
+.owl-thumb-item:hover i,
+.owl-thumb-item.active i {
+  color: #ffffff;
+}
+.owl-thumb-item.active,
+.owl-thumb-item:hover {
+  transform: translateX(0) rotateZ(0) scale(0.9);
+}
+.owl-thumb-item::before {
+  display: block;
+  content: "";
+  height: 100%;
+  width: 130%;
+  position: absolute;
+  /* background-image: url(assets/img/shadow.png); */
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  top: 90%;
+  left: -20%;
+  right: 0;
+  transition: all 0.4s ease-out;
+  transform-origin: 30% 50%;
+  pointer-events: none;
+  z-index: 1;
+  transform: translateX(0) rotateZ(0) scale(0.87);
+  -webkit-transform: translateX(0) rotateZ(0) scale(0.87);
+  -ms-transform: translateX(0) rotateZ(0) scale(0.87);
+  transform: translateX(0) rotateZ(0) scale(0.87);
+}
+.owl-thumb-item:hover::before,
+.owl-thumb-item.active::before {
+  opacity: 0;
+  transform: scaleX(0);
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+}
+.owl-thumb-item.active,
+.owl-thumb-item:hover {
+  padding: 18px;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  border-radius: 10px;
+  color: #fff;
+}
+.owl-thumb-item h3 {
+  color: #616161;
+  margin-bottom: 15px;
+}
+.owl-thumb-item.active h3,
+.owl-thumb-item:hover h3 {
+  color: #fff;
+}
+.owl-thumb-item.active .glyph .glyph-icon::before,
+.owl-thumb-item:hover .glyph .glyph-icon::before {
+  color: #fff;
+}
+.navbar-light.fixed-top,
+.search-modal,
+.home-video-area::before,
+.owl-thumb-item.active .slide-service-item,
+.owl-thumb-item:hover .slide-service-item {
+  color: #fff;
+}
+.navbar-light.fixed-top,
+.search-modal,
+.home-video-area::before,
+.owl-thumb-item.active .slide-service-item,
+.owl-thumb-item:hover .slide-service-item {
+  color: #fff !important;
+}
+.navbar-light.fixed-top,
+.search-modal,
+.home-video-area::before,
+.owl-thumb-item.active,
+.owl-thumb-item:hover {
+  background-color: #fe5619;
+}
+
+.btn-a {
+  margin-top: 40px;
+}
+
+.btn-a button {
+  border: 1px solid #fe5619;
+  background-color: #fe5619;
+  padding: 10px 40px 10px 40px;
+  text-transform: capitalize;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* =========================
+      End Slider Area CSS
+     ========================= */

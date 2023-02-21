@@ -1,0 +1,57 @@
+<section class="faq ptb-100" id="faq">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2 text-center">
+        <div class="section-title">
+          <h2>Frequently Asked Questions</h2>
+          <p>
+            Based on over ten years of experience and questions we receive from
+            our clients, we wrote down a list of Frequently Asked Questions
+            (FAQ). We hope that it will help you better understand the issues
+            related to software development. For your convenience, we have
+            divided the questions into three categories: process, costs and
+            experience.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-content">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="content-box color-effect-1">
+            <h3>One More Question?</h3>
+
+            <div class="box-icon-wrap box-icon-effect-1 box-icon-effect-1a">
+              <div class="box-icon">
+                <a href="#"><i class="fa fa-share"></i></a>
+              </div>
+            </div>
+
+            <p>
+              If you have more questions, send us a message and we will answer
+              you as soon as possible.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-8">
+          <div class="container" *ngFor="let faq of faqs; let i = index">
+            <div class="accordian-heading panel" (click)="accordion(i)">
+              {{ faq.title }}
+              <span class="pull-right up-icon" *ngIf="id !== i"
+                ><i class="fa fa-plus"></i
+              ></span>
+              <span class="pull-right up-icon" *ngIf="id === i"
+                ><i class="fa fa-minus"></i
+              ></span>
+            </div>
+            <div class="accordian-content" *ngIf="id === i">
+              {{ faq.description }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

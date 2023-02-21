@@ -1,0 +1,143 @@
+<section id="contact" class="contact-area ptb-100">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2 text-center">
+        <div class="section-title">
+          <h2>Contact Us</h2>
+          <p>
+            Creative Tech is a professional web design company providing custom
+            web development, shopping carts. Contact us to get online today. We
+            look forward hearing from you. Don’t hesitate to contact us with any
+            questions or concerns you may have or even simply to discuss your
+            ideas.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-4 col-md-4">
+        <div class="address-area">
+          <div class="addess">
+            <i class="fa fa-map-marker"></i>
+            <h4>Address</h4>
+            <p>Street 21 Sector G13/3 Islamabad, Pakistan</p>
+          </div>
+          <div class="email">
+            <i class="fa fa-envelope"></i>
+            <h4>Email</h4>
+            <p>support@creativetech-solutions.com</p>
+          </div>
+          <div class="phone">
+            <i class="fa fa-phone"></i>
+            <h4>Phone</h4>
+            <p>+92512300537</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-8 col-md-8">
+        <div class="contact-form">
+          <form [formGroup]="regForm" (ngSubmit)="sendEmail($event)">
+            <div class="row">
+              <div class="col-lg-6 col-md-12">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    placeholder="Name"
+                    class="form-control"
+                    name="name"
+                    formControlName="name"
+                  />
+                  <small
+                    *ngIf="
+                      regForm.controls['name'].dirty &&
+                      regForm.hasError('required', 'name')
+                    "
+                    class="text-danger"
+                    >Name is required</small
+                  >
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12">
+                <div class="form-group">
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    class="form-control"
+                    name="email"
+                    formControlName="email"
+                  />
+                  <small
+                    *ngIf="
+                      regForm.controls['email'].dirty &&
+                      regForm.hasError('required', 'email')
+                    "
+                    class="text-danger"
+                    >Email is required</small
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-6 col-md-12">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    placeholder="Subject"
+                    class="form-control"
+                    name="subject"
+                  />
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    placeholder="Phone"
+                    class="form-control"
+                    name="phone"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-12 col-md-12">
+                <div class="form-group">
+                  <textarea
+                    class="form-control"
+                    placeholder="Your Message"
+                    rows="5"
+                    name="message"
+                    formControlName="message"
+                  ></textarea>
+                  <small
+                    *ngIf="
+                      regForm.controls['message'].dirty &&
+                      regForm.hasError('required', 'message')
+                    "
+                    class="text-danger"
+                    >Message is required</small
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="btn-a">
+              <button>
+                Submit
+                <i class="fa fa-arrow-right"></i>
+              </button>
+            </div>
+          </form>
+          <div class="col-md-12">
+            <div id="contact_send_status" *ngIf="successMsg">
+              <h3 class="contactMsg">{{ successMsg }}</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

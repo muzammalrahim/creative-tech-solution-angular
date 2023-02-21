@@ -1,0 +1,44 @@
+<section class="testimonials ptb-100" id="testimonial">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2 text-center">
+        <div class="section-title">
+          <h2>Our Testimonial</h2>
+          <p>What our clients says about us.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="slick-wrapper">
+      <ngx-slick-carousel
+        class="carousel"
+        #slickModal="slick-carousel"
+        [config]="slideConfig"
+      >
+        <div
+          ngxSlickItem
+          *ngFor="let testimonial of testimonials"
+          class="slide"
+        >
+          <div class="row col">
+            <div class="testimonail_wrap">
+              <div class="client_profiles">
+                <img
+                  [src]="
+                    testimonial?.image || 'https://via.placeholder.com/400x300'
+                  "
+                />
+              </div>
+              <div class="testimonial-text">
+                <i class="fa fa-quote-right"></i>
+                <h3>{{ testimonial?.name }}</h3>
+                <span>{{ testimonial?.designation }}</span>
+                <p>{{ testimonial?.description }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ngx-slick-carousel>
+    </div>
+  </div>
+</section>

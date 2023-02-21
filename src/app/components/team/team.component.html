@@ -1,0 +1,41 @@
+<div class="container" id="team">
+  <div class="row">
+    <div class="col-lg-8 offset-lg-2 text-center">
+      <div class="section-title">
+        <h2>Our Team</h2>
+        <p>
+          Teamwork allows employees to take greater responsibility for decision
+          making and also allows team members to control more of the work
+          process. Working on a team also gives employees a greater sense of
+          belonging and of recognition, which helps them take more pride in
+          their work, and their company.
+        </p>
+      </div>
+    </div>
+  </div>
+  <owl-carousel-o [options]="customOptions">
+    <ng-container *ngFor="let team of teams">
+      <ng-template carouselSlide>
+        <div class="row p-0 m-0">
+          <div class="team-box">
+            <img
+              [src]="team?.image"
+              alt="Description"
+              width="360"
+              height="400"
+            />
+            <div class="box-content">
+              <div class="box-inner-content">
+                <h3 [ngStyle]="{ color: 'white' }" class="title">
+                  {{ team?.name }}
+                </h3>
+                <span class="post">{{ team?.designation }}</span>
+                <span class="post">{{ team?.skills }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </ng-container>
+  </owl-carousel-o>
+</div>

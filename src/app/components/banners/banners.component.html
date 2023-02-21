@@ -1,0 +1,155 @@
+<!-- <p>banners works!</p> -->
+<div>
+  <div id="home" class="hompage-slides-wrapper">
+    <div class="owl-theme homepage-slides">
+      <div
+        *ngIf="toggle == 0"
+        class="single-slider-item"
+        [style.backgroundImage]="'url(' + banners[0].image + ')'"
+        [ngStyle]="{ color: 'gray' }"
+      >
+        <div class="diplay-table">
+          <div class="display-table-cell">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6">
+                  <h1 [ngStyle]="{ color: '#FE5619' }">
+                    {{ banners[0] && banners[0].title }}
+                  </h1>
+                  <p [ngStyle]="{ color: 'gray' }" id="beautiful">
+                    {{ banners[0] && banners[0].description }}
+                  </p>
+                  <div class="btn-a">
+                    <button>
+                      get started
+                      <i class="fa fa-arrow-right"></i>
+                    </button>
+                  </div>
+                  <!-- <div class="center-wrap">
+                    <a linkRouter="#" class="btn-a text-white">
+                      <div class="button">
+                        get started
+                        <i class="fa fa-arrow-right"></i>
+                        <div class="mask"></div>
+                      </div>
+                    </a>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        *ngIf="toggle == 1"
+        class="single-slider-item"
+        [style.backgroundImage]="'url(' + banners[1].image + ')'"
+        [ngStyle]="{ color: 'gray' }"
+      >
+        <div class="diplay-table">
+          <div class="display-table-cell">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6">
+                  <h1 [ngStyle]="{ color: '#FE5619' }">
+                    {{ banners[1] && banners[1].title }}
+                  </h1>
+                  <p [ngStyle]="{ color: 'gray' }" id="beautiful">
+                    {{ banners[1] && banners[1].description }}
+                  </p>
+                  <div class="btn-a">
+                    <button>
+                      get started
+                      <i class="fa fa-arrow-right"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        *ngIf="toggle == 2"
+        class="single-slider-item"
+        [style.backgroundImage]="'url(' + banners[2].image + ')'"
+        [ngStyle]="{ color: 'gray' }"
+      >
+        <div class="diplay-table">
+          <div class="display-table-cell">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6">
+                  <h1 [ngStyle]="{ color: '#FE5619' }">
+                    {{ banners[2] && banners[2].title }}
+                  </h1>
+                  <p [ngStyle]="{ color: 'gray' }" id="beautiful">
+                    {{ banners[2] && banners[2].description }}
+                  </p>
+                  <div class="btn-a">
+                    <button>
+                      get started
+                      <i class="fa fa-arrow-right"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-4">
+          <div id="home" class="hompage-slides-wrapper">
+            <div class="owl-theme homepage-slides">
+              <div class="owl-thumb">
+                <div class="owl-thumb-item" (click)="toggleState(0)">
+                  <i class="fa fa-rocket"></i>
+                  <h3>{{ banners[0] && banners[0].title }}</h3>
+                  <p>
+                    {{ banners[0] && banners[0].description }}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div id="home" class="hompage-slides-wrapper">
+            <div class="owl-theme homepage-slides">
+              <div class="owl-thumb">
+                <div class="owl-thumb-item" (click)="toggleState(1)">
+                  <i class="fa fa-gift"></i>
+                  <h3>{{ banners[1] && banners[1].title }}</h3>
+                  <p>
+                    {{ banners[1] && banners[1].description }}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div id="home" class="hompage-slides-wrapper">
+            <div class="owl-theme homepage-slides">
+              <div class="owl-thumb">
+                <div class="owl-thumb-item" (click)="toggleState(2)">
+                  <i class="fa fa-support"></i>
+                  <h3>{{ banners[0] && banners[0].title }}</h3>
+                  <p>
+                    {{ banners[0] && banners[0].description }}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

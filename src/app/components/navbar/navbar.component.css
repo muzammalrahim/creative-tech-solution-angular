@@ -1,0 +1,118 @@
+.top-header {
+  background-color: #eeeeee;
+  color: #848484;
+  padding: 10px 0 10px;
+}
+.list-inline li {
+  display: inline-block;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.address-bar {
+  background-color: #eee;
+  margin-left: 104px;
+}
+.address-bar ul li a {
+  color: #9a9a9a;
+  font-size: 14px;
+}
+.social-icons {
+  text-align: right;
+}
+.social-icons ul li a {
+  display: block;
+  width: 25px;
+  height: 25px;
+  color: #9a9a9a;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 27px;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+}
+.social-icons ul li a:hover {
+  color: #fff;
+  background-color: #fe5619;
+}
+.navbar-light.fixed-top {
+  background-color: #fe5619 !important;
+}
+.navbar-light {
+  transition: 0.6s;
+  -webkit-transition: 0.6s;
+  background-color: #e9dbc8 !important;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: #000;
+  padding: 15px 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #fff;
+  background-color: #fe5619;
+}
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: #fff !important;
+  background: none;
+}
+.navbar-light.fixed-top,
+.search-modal,
+.home-video-area::before,
+.owl-thumb-item.active .slide-service-item,
+.owl-thumb-item:hover .slide-service-item {
+  color: #fff;
+}
+.fixed-top {
+  z-index: 99 !important;
+}
+.navbar-light.fixed-top,
+.search-modal,
+.home-video-area::before,
+.owl-thumb-item.active .slide-service-item,
+.owl-thumb-item:hover .slide-service-item {
+  color: #fff !important;
+}
+.navbar-light .navbar-brand {
+  position: absolute;
+  top: -50px;
+  z-index: 99999;
+  padding: 0;
+}
+.navbar-brand img {
+  cursor: pointer;
+  position: relative;
+  bottom: 10px;
+}
+.navbar .logo img {
+  position: relative;
+  top: 11px;
+  right: 70px;
+}
+a {
+  text-decoration: none;
+}
+
+.menu-shrink {
+  box-shadow: 0 0 10px #ebebeb;
+}
+.menu-shrink .navbar-nav .nav-link {
+  color: #fff !important;
+}
+.menu-shrink .navbar-brand.logo-2 {
+  display: block;
+  top: 28px;
+}
+.navbar-light .navbar-nav .nav-link.active {
+  background-color: #e74c14 !important;
+}
+.navbar-brand.logo-2,
+.menu-shrink .navbar-brand.logo {
+  display: none;
+}
+.navbar {
+  padding: 0;
+}

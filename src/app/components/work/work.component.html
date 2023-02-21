@@ -1,0 +1,85 @@
+<section id="work" class="our-works ptb-100">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2 text-center">
+        <div class="section-title">
+          <h2>works</h2>
+          <p>
+            Our work comprises of Joomla, WordPress and e commerce platform
+            projects.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row" *ngIf="!showMore">
+      <div
+        class="col-md-6 col-lg-4"
+        *ngFor="let workData of workData; let i = index"
+      >
+        <div class="work-details">
+          <figure>
+            <img [src]="workData?.image" alt="Gallery" class="img-fluid" />
+
+            <div class="box-content">
+              <ul class="icon">
+                <li>
+                  <span href="ll" class="popup-btn" (click)="open(i)">
+                    <i class="fa fa-search"></i>
+                  </span>
+                </li>
+                <a href="{{ workData?.link }}" target="_blank">
+                  <li>
+                    <span href="ll" class="popup-btn">
+                      <i class="fa fa-link"></i>
+                    </span>
+                  </li>
+                </a>
+              </ul>
+            </div>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" *ngIf="showMore">
+      <div
+        class="col-md-6 col-lg-4"
+        *ngFor="let defaultWork of defaultWork; let i = index"
+      >
+        <div class="work-details">
+          <figure>
+            <img [src]="defaultWork?.image" alt="Gallery" class="img-fluid" />
+
+            <div class="box-content">
+              <ul class="icon">
+                <li>
+                  <span href="ll" class="popup-btn" (click)="open(i)">
+                    <i class="fa fa-search"></i>
+                  </span>
+                </li>
+                <a href="{{ defaultWork?.link }}" target="_blank">
+                  <li>
+                    <span href="ll" class="popup-btn">
+                      <i class="fa fa-link"></i>
+                    </span>
+                  </li>
+                </a>
+              </ul>
+            </div>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <div class="btn-a" *ngIf="isShow">
+      <button (click)="showLessHandler()">show less</button>
+    </div>
+
+    <div class="btn-a" *ngIf="!isShow">
+      <button (click)="showMoreHandler()">show more</button>
+    </div>
+  </div>
+</section>

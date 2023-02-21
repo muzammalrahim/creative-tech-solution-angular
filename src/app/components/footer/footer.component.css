@@ -1,0 +1,49 @@
+.footer {
+  color: #fff;
+  padding: 35px 0;
+  background-color: #fe5619;
+}
+.footer .copyright {
+  margin: 6px 0 0;
+}
+.social-icons.bottom ul li a {
+  width: 35px;
+  height: 35px;
+  color: #eee;
+  line-height: 38px;
+  font-size: 18px;
+}
+.social-icons.bottom ul li a {
+  background-color: #9e3610;
+}
+a {
+  text-decoration: none;
+}
+.social-icons.bottom ul li a:hover {
+  color: #9e3610;
+}
+.list-inline li {
+  display: inline-block;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.social-icons.bottom ul li a:hover {
+  background-color: #fff;
+}
+.social-icons {
+  text-align: right;
+}
+.social-icons ul li a {
+  display: block;
+  width: 25px;
+  height: 25px;
+  color: #9a9a9a;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 27px;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+}
+.social-icons ul li a:hover {
+  color: #fff;
+}

@@ -1,0 +1,76 @@
+.contact-area {
+  background-color: #f5f8f9;
+}
+.contact-form {
+  margin-top: 30px;
+}
+.contact-form .form-control {
+  height: 50px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+}
+.contact-form textarea.form-control {
+  height: auto;
+}
+.address-area {
+  margin-top: 30px;
+}
+.address-area div {
+  position: relative;
+  padding-left: 45px;
+}
+.address-area h4 {
+  font-size: 22px;
+  color: #626262;
+  margin: 0 0 10px;
+}
+.address-area i {
+  color: #fe5619;
+  font-size: 35px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.email {
+  margin: 50px 0;
+}
+#rc-imageselect,
+.g-recaptcha {
+  transform: scale(0.77);
+  -webkit-transform: scale(0.77);
+  transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+}
+#contact_send_status {
+  color: red;
+  margin: 0 0 10px;
+}
+.ptb-100 {
+  padding: 100px 0;
+}
+a:focus,
+h2 {
+  color: #fe5619;
+}
+.btn-a {
+  margin-top: 10px;
+}
+
+.btn-a button {
+  border: 1px solid #fe5619;
+  background-color: #fe5619;
+  padding: 10px 40px 10px 40px;
+  text-transform: capitalize;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+}
+.contactMsg {
+  color: #2ba847;
+  font-size: 18px;
+}
+h2,
+h3 {
+  margin-top: 20px;
+}
